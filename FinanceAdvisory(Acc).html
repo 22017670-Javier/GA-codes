@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--
+     I declare that this code was written by me. 
+     I will not copy or allow others to copy my code. 
+     I understand that copying code is considered as plagiarism.
+
+     Student Name: Tan Qi Xuan Javier
+     Student ID: 22017670
+     Class: C369-2D-E63C-A
+     Date/Time Last modified: 14/8/2023
+    -->
+
+    <title>IGFS Singapore | Transaction</title>
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav a:hover {
+            color: #2464a4;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        article {
+            width: 60%;
+        }
+
+        #logo-resize {
+            width: 200px;
+            height: auto;
+        }
+
+        p {
+            font-size: 24px;
+            font-family: arial;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
+        .button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            background-color: white;
+            color: blue;
+            border-color: blue;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.8s ease, color 0.4s ease;
+        }
+
+        .button:hover {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            float: right;
+            text-align: center;
+            background-color: white;
+        }
+
+        .large-container {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 100%;
+            text-align: center;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .container img {
+            max-width: 90%;
+            height: auto;
+            padding: 10px;
+        }
+
+        .article-container {
+            display: flex;
+        }
+
+        .article {
+            width: 50%;
+        }
+
+        .bold {
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        section {
+            padding: 20px;
+            background-image: url('photo_2023-07-31_09-53-22.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .form-container {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            resize: none;
+        }
+
+        input[type="Submit"] {
+            background-color: rgb(55, 255, 0);
+            color: black;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            margin: 0;
+            font-weight: bold;
+            transition: background-color 0.8s ease, color 0.4s ease;
+        }
+
+        input[type="Submit"]:hover {
+            background-color: rgb(50, 217, 4);
+            color: white;
+            font-weight: bold;
+        }
+
+        label {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .image {
+            max-width: 20%;
+            height: auto;
+            padding: 10px;
+        }
+
+        .image_2 {
+            max-width: 40%;
+            height: auto;
+            padding: 10px;
+        }
+
+        select {
+            width: 100%;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            height: 50px;
+        }
+
+        .output-field {
+            /* Additional style for the output field */
+            width: 100%;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+
+        .small-font {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="photo_2023-07-30_21-23-44.jpg" alt="Logo" id="logo-resize" class="img-fluid">
+        <a href="HomePage(Acc).html">Home</a>
+        <a href="AboutUs(Acc).html">About Us</a>
+        <a href="Services(Acc).html">Services</a>
+        <a href="ConnectUs(Acc).html">Connect With Us</a>
+        <a href="index.html"><img src="photo_2023-08-01_16-39-57.jpg" alt="Logo" id="logo-resize" class="img-fluid"></a>
+    </nav>
+
+
+    <section>
+        <div class="article-container">
+            <div class="container">
+                <h3 class="bold">Financial Advisory</h3>
+                <div class="form-container">
+                    <form action="HomePage(Acc).html" method="post" onsubmit="submitForm()">
+                        <label for="email">Account Number</label><br>
+                        <input type="text" id="accNum" name="accNum" required><br>
+
+                        <label for="email">Financial Advisor</label><br>
+                        <select id="advisors" name="advisors" class="input-field">
+                            <option value="jq">Mr. Jonathan Quak</option>
+                            <option value="jl">Mr. James Lee</option>
+                            <option value="sl">Mrs. Serene Lim</option>
+                            <option value="gt">Mrs. Gewndalyn Tok</option>
+                            <option value="in">Mdm. Irene Ng</option>
+                        </select><br>
+
+                        <label for="date">Date</label><br>
+                        <input type="date" id="date" name="date" required><br>
+
+                        <label for="time">Time</label><br>
+                        <select id="time" name="time" class="input-field">
+                            <option value="12">12:00 pm</option>
+                            <option value="1">01:00 pm</option>
+                            <option value="2">02:00 pm</option>
+                            <option value="3">03:00 pm</option>
+                            <option value="4">04:00 pm</option>
+                            <option value="5">05:00 pm</option>
+                            <option value="6">06:00 pm</option>
+                        </select><br>
+
+                        <label for="message">Addiotional Notes (Optional)</label><br>
+                        <textarea id="message" name="message" rows="4" cols="35" optional></textarea><br>
+
+                        <input type="Submit" id="submit" value="Book">
+                        <p class="small-font">By clicking Book, you agree with our <a
+                                href="terms_and_policy.html">Terms & Policy</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function submitForm() {
+            message = "Appointment has been successfully booked!"
+            alert(message);
+        }
+    </script>
+
+    <footer>
+        &copy; 2023 InterGlobe Finance Solutions. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

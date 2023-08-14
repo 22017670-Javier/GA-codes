@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--
+     I declare that this code was written by me. 
+     I will not copy or allow others to copy my code. 
+     I understand that copying code is considered as plagiarism.
+
+     Student Name: Tan Qi Xuan Javier
+     Student ID: 22017670
+     Class: C369-2D-E63C-A
+     Date/Time Last modified: 14/8/2023
+    -->
+
+    <title>IGFS Singapore | Home</title>
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav a:hover {
+            color: #2464a4;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        article {
+            width: 60%;
+        }
+
+        #logo-resize {
+            width: 200px;
+            height: auto;
+        }
+
+        p {
+            font-size: 24px;
+            font-family: arial;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
+        .button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            background-color: white;
+            color: blue;
+            border-color: blue;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.8s ease, color 0.4s ease;
+        }
+
+        .button:hover {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 40%;
+            float: right;
+            text-align: center;
+            background-color: white;
+        }
+
+        .container img {
+            max-width: 90%;
+            height: auto;
+            padding: 10px;
+        }
+
+        .article-container {
+            display: flex;
+        }
+
+        .article {
+            width: 50%;
+        }
+
+        .bold {
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        section {
+            padding: 20px;
+            background-image: url('photo_2023-07-31_09-53-22.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .option {
+            display: none;
+            background-color: white;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="photo_2023-07-30_21-23-44.jpg" alt="Logo" id="logo-resize" class="img-fluid">
+        <a href="HomePage(Acc).html">Home</a>
+        <a href="AboutUs(Acc).html">About Us</a>
+        <a href="Services(Acc).html">Services</a>
+        <a href="ConnectUs(Acc).html">Connect With Us</a>
+        <a href="index.html"><img src="photo_2023-08-01_16-39-57.jpg" alt="Logo" id="logo-resize" class="img-fluid"></a>
+    </nav>
+
+    <section>
+        <div class="article-container">
+            <article class="article">
+
+                <h2>Welcome to IGFS</h2>
+                <p>InterGlobe Finance Solutions is dedicated to providing cutting-edge financial solutions. We enable
+                    people
+                    and
+                    companies to reach their financial objectives by taking a customer-centric approach and utilizing
+                    cutting-edge technology. We put an emphasis on your success.</p>
+                <p>
+                    <button onclick="window.location.href = 'AboutUs(Acc).html';" class="button">Find out more</button>
+                    <button onclick="window.location.href = 'Services(Acc).html';" class="button">Our Services</button>
+                </p>
+            </article>
+            <div class="container">
+                <p class="bold">Bank with us Today!</p>
+                <a href="#" onclick="errorLogin(); return false;"><img src="photo_2023-07-31_17-37-14.jpg"
+                        alt="Login with IGFS account"></a>
+                <a href="#" onclick="errorLogin(); return false;"><img src="photo_2023-07-31_17-52-35.jpg"
+                        alt="Login with Singpass"></a>
+                <a href="#" onclick="errorReg(); return false;"><img src="photo_2023-07-31_17-52-46.jpg"
+                        alt="Register IGFS Account"></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function errorLogin() {
+            message = "You are already logged in!"
+            alert(message);
+        }
+
+        function errorReg() {
+            message = "Unable to register an account while logged into another account!"
+            alert(message);
+        }
+    </script>
+
+    <footer>
+        &copy; 2023 InterGlobe Finance Solutions. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
